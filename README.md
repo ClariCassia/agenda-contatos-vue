@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img alt="Layout da aplicação" width="100%" src="./src/assets/img/gif-desktop.gif" />
+  <img alt="Layout da aplicação" width="50%" src="./src/assets/img/gif-desktop.gif" />
 </p>
 
 ## 💻 Projeto
@@ -40,12 +40,9 @@ A aplicação facilita o gerenciamento de contatos, permitindo armazenar e busca
    Dentro da pasta onde deseja salvar o projeto, abra o git e efetuar o comando
 
    ```bash
-   git clone https://github.com/ClariCassia/Pokedex.git
+   git clone https://github.com/ClariCassia/agenda-contatos-vue.git
    
    ```
-
-- É possível também baixar o arquivo e desconpactar localmente:
-- ![imagem](./src/assets/gifs/download-project.gif)
 
  **2. Acesse o Diretório:**
 
@@ -62,11 +59,10 @@ A aplicação facilita o gerenciamento de contatos, permitindo armazenar e busca
  **4. Execute a Aplicação:**
 
    ```bash
-   npm start   # ou yarn start
+   npm run dev  # ou yarn start
    ```
 
- **5. Acesse a Aplicação:**
-   Abra o navegador e acesse [http://localhost:5173/](http://localhost:5173/).
+
 
 ## 🤝 Contribuições
 
@@ -76,7 +72,8 @@ Faça o `fork` e clone o projeto a partir do seu usuário.
 
 ```bash
 # Clonando projeto
-$ git clone https://github.com/SEU-NOME-DE-USUARIO/pokedex.git
+$ git clone https://github.com/SEU-NOME-DE-USUARIO/agenda-contatos-vue.git
+
 
 # Criando um branch
 $ git branch minha-alteracao
@@ -98,4 +95,4 @@ Você deve navegar até o seu repositório onde fez o fork e clicar no botão *N
 
 Agradeço antecipadamente pela sua contribuição, juntos podemos tornar este projeto ainda mais incrível! 🙏🌟
 
-Com ❤️ por [Clarissa de Cássia](https://www.linkedin.com/in/clarissa-cassia-dev-front-end/) 😊
+Com ❤️ por [Clarissa de Cássia](www.linkedin.com/in/clarissa-cassia-dev-full-stack) 😊
