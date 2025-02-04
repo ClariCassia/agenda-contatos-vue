@@ -12,7 +12,7 @@
                 <InputField v-model="contato.email" type="email" placeholder="Email" />
 
                 <InputField v-model="contato.telefone" placeholder="(11) 99999-9999" required
-                    mask="'(##) #####-####'" />
+                    mask="'(##) #####-####'" maxlength="11" />
 
                 <InputField v-model="contato.imagem" type="text" placeholder="URL da Foto" />
 
