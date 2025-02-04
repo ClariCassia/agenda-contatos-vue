@@ -167,4 +167,21 @@ strong {
 .categoria {
   font-size: 12px;
 }
+
+@media (max-width: 600px) {
+  .contact-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details {
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+}
 </style>
