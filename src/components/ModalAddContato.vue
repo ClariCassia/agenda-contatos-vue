@@ -252,5 +252,7 @@ h3 {
     .address-group {
         grid-template-columns: 1fr;
     }
+    .container-select{
+        flex-direction: column;}
 }
 </style>
