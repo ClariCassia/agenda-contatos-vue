@@ -11,8 +11,8 @@
 
                 <InputField v-model="contato.email" type="email" placeholder="Email" />
 
-                <InputField v-model="contato.telefone" placeholder="(11) 99999-9999" required
-                    mask="'(##) #####-####'" maxlength="11" />
+                <InputField v-model="contato.telefone" placeholder="(11) 99999-9999" required mask="'(##) #####-####'"
+                    maxlength="11" />
 
                 <InputField v-model="contato.imagem" type="text" placeholder="URL da Foto" />
 
@@ -24,15 +24,15 @@
                 </div>
 
                 <div class="container-select">
-                    <select v-model="contato.categoria" class="custom-select ">
-                        <option value="" disabled class="placeholder">Selecione uma categoria:</option>
+                    <select v-model="contato.categoria" class="custom-select">
+                        <option value="" disabled>Selecione uma categoria</option>
                         <option v-for="(label, index) in categorias" :key="index" :value="index">
                             {{ label }}
                         </option>
                     </select>
 
                     <select v-model="contato.uf" class="custom-select">
-                        <option value="" disabled selected>Selecione o Estado:</option>
+                        <option value="" disabled>Selecione um estado</option>
                         <option v-for="(sigla, index) in siglasUf" :key="index" :value="sigla">
                             {{ sigla }}
                         </option>
@@ -69,7 +69,6 @@ export default {
         editando: Boolean,
         categorias: Object,
         valueContato: Object,
-
     },
     data() {
         return {
@@ -77,10 +76,9 @@ export default {
                 'AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS',
                 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC',
                 'SP', 'SE', 'TO'
-            ]
+            ],
         };
     },
-
     computed: {
         contato: {
             get() {
@@ -88,9 +86,21 @@ export default {
             },
         }
     },
-
+    watch: {
+        valueContato: {
+            handler(novoContato) {
+                if (novoContato) {
+                    this.contato = { ...novoContato };
+                    this.contato.categoria = novoContato.categoria || "";
+                    this.contato.uf = novoContato.uf || "";
+                }
+            },
+            immediate: true,
+            deep: true
+        }
+    },
     methods: {
-        async salvarContato(event) {
+        salvarContato() {
 
             try {
                 let contatos = JSON.parse(localStorage.getItem('contatos')) || [];
