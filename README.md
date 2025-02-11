@@ -13,8 +13,6 @@ Agenda de Contatos é uma aplicação simples e intuitiva para armazenar e geren
 
 #### Para ver o projeto pronto ➡️ [clique aqui ](https://agenda-contatos-vue.vercel.app/) 🚀
 
-agenda-contatos-vue.vercel.app
-
 A aplicação facilita o gerenciamento de contatos, permitindo armazenar e buscar informações essenciais, como nome, telefone, e-mail, endereço, além de classificar os contatos por categorias.
 
 <h2>⚙️ Funcionalidades</h2>
